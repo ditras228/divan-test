@@ -1,0 +1,86 @@
+.page{
+    display: grid;
+    grid-template-rows: 30vh  70vh 100vh;
+}
+.header{
+    background-color: dodgerblue;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.nav{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+}
+.nav_btn{
+    height: 50px;
+    border: none;
+    transition: linear 0.3s;
+}
+.nav_btn--clicked{
+    background-color: gainsboro;
+}
+
+.nav_btn:hover{
+    background-color:gainsboro;
+}
+.content{
+    background-color:gainsboro;
+    padding: 30px;
+}
+.content_items{
+    display: grid;
+    grid-gap: 10px;
+    width: 70vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content_item{
+    background-color: darkgrey;
+    border-radius: 10px;
+    height: 20px;
+}
+.desc{
+    background-color: wheat;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 40px;
+}
+.desc_title{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.desc_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    grid-gap: 10px;
+}
+.desc_item{
+    background-color: white;
+}
+
+.messenger{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    width: 20vw;
+    background-color: red;
+
+    display: grid;
+    grid-template-rows: 1fr 0.1fr 2fr;
+}
+.messenger_header{
+    background-color: yellow;
+}
+.messenger_line{
+    background-color: gray;
+}
+.messenger_content{
+    background-color: white;
+}
+@media screen min {
+}
+.messenger{
+
+}
